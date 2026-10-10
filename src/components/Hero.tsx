@@ -184,34 +184,7 @@ export const Hero: React.FC<HeroProps> = ({ stats, onOpenDonate }) => {
       </div>
 
       {/* Community Impact Strip */}
-      <div className="bg-navy-900/90 border-t border-slate-800 py-4 px-4">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-          <div>
-            <div className="text-xs uppercase tracking-wider text-slate-400 font-medium">Grassroots Raised</div>
-            <div className="text-xl md:text-2xl font-bold text-amber-300 font-mono tabular-nums">
-              ${stats ? (stats.fundsRaised).toLocaleString() : '28,450+'}
-            </div>
-          </div>
-          <div>
-            <div className="text-xs uppercase tracking-wider text-slate-400 font-medium">Active Volunteers</div>
-            <div className="text-xl md:text-2xl font-bold text-white font-mono tabular-nums">
-              {stats ? stats.volunteersCount : '188+'}
-            </div>
-          </div>
-          <div>
-            <div className="text-xs uppercase tracking-wider text-slate-400 font-medium">Signs Requested</div>
-            <div className="text-xl md:text-2xl font-bold text-white font-mono tabular-nums">
-              {stats ? stats.yardSignsRequested : '315+'}
-            </div>
-          </div>
-          <div>
-            <div className="text-xs uppercase tracking-wider text-slate-400 font-medium">Platform Focus</div>
-            <div className="text-xl md:text-2xl font-bold text-amber-300 font-serif">
-              100% Non-Partisan
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </section>
   );
 };
