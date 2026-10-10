@@ -1,0 +1,6 @@
+{
+  "name": "Nellie \"Cookie\" Satcher for District 34 Senate",
+  "description": "Official campaign web application for Nellie \"Cookie\" Satcher running for District 34 Senate. Featuring platform commitments, volunteer mobilization, event RSVPs, precinct lookup, and grassroots fundraising.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
