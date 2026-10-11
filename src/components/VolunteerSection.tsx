@@ -2,6 +2,16 @@ import React, { useState } from 'react';
 import { CheckCircle2, ArrowRight, ShieldCheck, Heart } from 'lucide-react';
 import { registerVolunteer } from '../services/api';
 import { Volunteer } from '../types/campaign';
+import {
+  Calendar,
+  Clock,
+  MapPin,
+  Search,
+  CheckCircle,
+  AlertCircle,
+  Car,
+  FileText,
+} from 'lucide-react';
 
 interface VolunteerSectionProps {
   onSuccessRegistered?: (vol: Volunteer) => void;
@@ -19,6 +29,7 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
   const [zipCode, setZipCode] = useState('');
   const [interests, setInterests] = useState<string[]>(['Host a Yard Sign']);
   const [notes, setNotes] = useState('');
+  const [rideRequested, setRideRequested] = useState(false);
 
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -76,55 +87,104 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
 
   return (
     <section id="volunteer" className="py-20 md:py-28 bg-gradient-to-b from-navy-900 to-navy-950 text-white relative">
+      <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
+          <div className="inline-block text-amber-300 font-extrabold text-xs tracking-widest uppercase bg-amber-400/10 border border-amber-400/30 px-3 py-1 rounded-full">
+            Voter Resource Center
+          </div>
+          <h2 className="font-serif text-3xl md:text-4xl font-extrabold text-white">
+            Make Your Vote Count in District 34
+          </h2>
+          <div className="w-20 h-1 bg-amber-400 mx-auto rounded-full" />
+          <p className="text-slate-300 text-sm md:text-base pt-1">
+            Find your polling location, review key deadlines, and get ready for Election Day.
+          </p>
+        </div>
+      
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Mobilization Manifesto */}
-          <div className="lg:col-span-5 space-y-6">
-            <div className="inline-flex items-center gap-2 text-amber-300 font-extrabold text-xs tracking-widest uppercase bg-amber-400/10 border border-amber-400/30 px-3 py-1 rounded-full">
-              Grassroots Momentum
+          
+
+{/* LeftKey Election Info Card */}
+          {/* Key Election Info Card */}
+          <div className="lg:col-span-5 bg-navy-900/90 rounded-2xl p-7 border border-amber-400/30 shadow-2xl relative">
+            <div className="flex items-center gap-2 text-amber-300 mb-3">
+              <Calendar className="w-5 h-5" />
+              <span className="font-bold tracking-wider uppercase text-xs">Official Election Dates</span>
             </div>
 
-            <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-white leading-tight">
-              A Campaign Powered By Our Neighbors
-            </h2>
+            <h3 className="font-serif text-2xl sm:text-3xl font-extrabold text-white mb-1">
+              ELECTION DAY
+            </h3>
+            <div className="text-xl font-bold text-amber-400 font-serif mb-5">
+              Tuesday, December 22, 2026
+            </div>
 
-            <p className="text-slate-300 text-base leading-relaxed">
-              Every yard sign placed, every door knocked, and every conversation shared brings District 34 closer to responsive leadership that works for everyone.
-            </p>
-
-            <div className="space-y-4 pt-2">
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-lg bg-amber-400/20 text-amber-300 flex items-center justify-center shrink-0 mt-0.5">
-                  <ShieldCheck className="w-4 h-4" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-white text-sm">Free Lawn Signs Delivered</h3>
-                  <p className="text-xs text-slate-400">
-                    Check "Host a Yard Sign" and our volunteer field team will deliver and place a sign in your yard.
-                  </p>
-                </div>
+            <div className="space-y-3 p-4 rounded-xl bg-navy-950/80 border border-slate-800 text-sm mb-6">
+              <div className="flex items-center justify-between">
+                <span className="text-slate-400">Office:</span>
+                <span className="font-bold text-white">District 34 State Senate</span>
               </div>
-
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-lg bg-crimson-600/30 text-crimson-400 flex items-center justify-center shrink-0 mt-0.5">
-                  <Heart className="w-4 h-4" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-white text-sm">Flexible Volunteer Shifts</h3>
-                  <p className="text-xs text-slate-400">
-                    Whether you have 1 hour a week or 10, there's a place for your talents on Team Cookie.
-                  </p>
-                </div>
+              <div className="flex items-center justify-between">
+                <span className="text-slate-400">Ballot Category:</span>
+                <span className="font-bold text-amber-400">Non-Partisan</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-slate-400">Election Hours:</span>
+                <span className="font-bold text-white flex items-center gap-1.5">
+                  <Clock className="w-3.5 h-3.5 text-amber-400" />
+                  7:00 AM – 7:00 PM
+                </span>
+              </div>
+              <div className="flex items-center justify-between pt-2 border-t border-slate-800">
+                <span className="text-slate-400">In-Person Early Voting:</span>
+                <span className="font-bold text-white">Nov 30 – Dec 19, 2026</span>
               </div>
             </div>
 
-            <div className="p-4 rounded-xl bg-navy-950/80 border border-amber-400/30">
-              <p className="font-serif italic text-xs text-amber-200">
-                "Our strength isn't big corporate donors. Our strength is every mother, father, worker, and retiree who wants District 34 to thrive."
-              </p>
-              <div className="text-[11px] text-amber-400 font-bold mt-1.5">— Nellie "Cookie" Satcher</div>
+            <div className="space-y-3">
+              <h4 className="font-bold text-xs uppercase tracking-wider text-slate-300 flex items-center gap-1.5">
+                <FileText className="w-4 h-4 text-amber-400" />
+                <span>What To Bring To The Polls</span>
+              </h4>
+              <ul className="text-xs text-slate-300 space-y-2">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <span>Valid Government Photo ID (Driver's License, State ID, or Passport)</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <span>If registered, your name will appear on the precinct poll book</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <span>Curbside voting is available for voters with mobility limitations</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="mt-6 pt-5 border-t border-slate-800">
+              {rideRequested ? (
+                <div className="p-3 bg-emerald-950/60 border border-emerald-500/40 rounded-lg text-xs text-emerald-300 flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4" />
+                  <span>Ride assistance requested! Campaign dispatch will contact you.</span>
+                </div>
+              ) : (
+                <button
+                  onClick={() => setRideRequested(true)}
+                  className="w-full py-2.5 px-4 bg-navy-800 hover:bg-navy-700 text-slate-200 text-xs font-semibold rounded-lg border border-slate-700 transition-colors flex items-center justify-center gap-2"
+                >
+                  <Car className="w-4 h-4 text-amber-400" />
+                  <span>Need a Free Ride to the Polls on Election Day?</span>
+                </button>
+              )}
             </div>
           </div>
+
+
+
+          
 
           {/* Right Column: Supporter Form */}
           <div className="lg:col-span-7">

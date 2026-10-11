@@ -60,46 +60,43 @@ export default function App() {
     });
   };
 
+  const handleScrollToDonate = () => {
+    const el = document.getElementById('donate');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800 selection:bg-amber-400 selection:text-navy-950 font-sans">
-      {/* Non-Partisan Header Banner */}
+      {/* Header Banner */}
       <TopBanner />
 
       {/* Main Sticky Navigation */}
       <Navbar
-        onOpenDonate={() => setIsDonateOpen(true)}
+        onOpenDonate={handleScrollToDonate}
         onOpenAdmin={() => setIsAdminOpen(true)}
       />
 
       <main className="flex-1">
-        {/* Hero Section */}
-        <Hero stats={stats} onOpenDonate={() => setIsDonateOpen(true)} />
+        {/* Hero Section with Embedded Grassroots Donation Panel */}
+        <Hero stats={stats} onOpenDonate={handleScrollToDonate} />
 
         {/* About Nellie "Cookie" Satcher */}
         <AboutSection />
 
-        {/* Platform Commitments */}
-        <PlatformCommitments />
-
-        {/* Voter Hub & Interactive Precinct Lookup */}
-        <VoterHub onOpenVolunteer={() => {}} />
-
-        {/* Campaign Events & Town Halls */}
-        <EventsSection />
-
-        {/* Community Endorsements Wall */}
-        <EndorsementsSection />
+        
 
         {/* Volunteer Mobilization & Yard Sign Request */}
         <VolunteerSection
           onSuccessRegistered={handleVolunteerRegistered}
-          onOpenDonate={() => setIsDonateOpen(true)}
+          onOpenDonate={handleScrollToDonate}
         />
       </main>
 
       {/* Campaign Footer */}
       <Footer
-        onOpenDonate={() => setIsDonateOpen(true)}
+        onOpenDonate={handleScrollToDonate}
         onOpenAdmin={() => setIsAdminOpen(true)}
       />
 

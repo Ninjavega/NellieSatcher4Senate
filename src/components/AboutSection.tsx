@@ -12,7 +12,7 @@ export const AboutSection: React.FC = () => {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-slate-100">
                 <img
-                  src={CAMPAIGN_IMAGES.listeningRoundtable}
+                  src={CAMPAIGN_IMAGES.districtmap}
                   alt="Nellie Cookie Satcher listening to District 34 community members"
                   referrerPolicy="no-referrer"
                   className="w-full h-auto object-cover aspect-[4/3]"
@@ -46,10 +46,6 @@ export const AboutSection: React.FC = () => {
               Nellie “Cookie” Satcher is a graduate of William Carey University with a Master’s in Business Administration and a BS in Psychology. She previously served as Human Resources Director for the City of Laurel and as Branch Director at the Mississippi Department of Employment Security (MDES). She has also led the International Association of Workforce Professionals (IAWP) as president for the state of Mississippi and as area president representing Mississippi, Alabama, and Tennessee.
             </p>
 
-            <p className="text-slate-600 text-base leading-relaxed">
-              Whether working with local school boards to expand student opportunities, organizing neighborhood safety initiatives, or standing up for senior healthcare access, Cookie brings practical leadership rooted in deep listening and authentic community trust.
-            </p>
-
             {/* Key Pillars */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
@@ -57,9 +53,9 @@ export const AboutSection: React.FC = () => {
                   <Handshake className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-sm text-navy-950">Proven Community Service</h3>
+                  <h3 className="font-bold text-sm text-navy-950">Economic Growth</h3>
                   <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                    Decades of grassroots engagement, family mentoring, and direct responsiveness to local neighborhood priorities.
+                    null
                   </p>
                 </div>
               </div>
@@ -69,9 +65,9 @@ export const AboutSection: React.FC = () => {
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-sm text-navy-950">Accountability &amp; Integrity</h3>
+                  <h3 className="font-bold text-sm text-navy-950">Accountability &amp; Transperancy</h3>
                   <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                    Committed to transparent governance, open quarterly town halls, and keeping District 34 fully informed.
+                    Committed to transparent governance, and keeping District 34 fully informed.
                   </p>
                 </div>
               </div>
@@ -93,7 +89,7 @@ export const AboutSection: React.FC = () => {
                   <Award className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-sm text-navy-950">Rooted in District 34</h3>
+                  <h3 className="font-bold text-sm text-navy-950">Uplift & Empower Stronger Families</h3>
                   <p className="text-xs text-slate-500 mt-1 leading-relaxed">
                     A homegrown leader whose family lives, works, and worships right here in the heart of our community.
                   </p>

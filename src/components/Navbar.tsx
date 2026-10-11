@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Heart, Shield } from 'lucide-react';
-import msFlag from '../assets/images/msflag.jpg';
+import msflag2 from '../assets/images/msflag2.jpg';
 
 interface NavbarProps {
   onOpenDonate: () => void;
@@ -19,21 +19,29 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDonate, onOpenAdmin }) => 
             href="#"
             className="flex items-center gap-3 group shrink-0 whitespace-nowrap"
           >
-            <div className="w-10 h-10 rounded-full border border-amber-400 bg-crimson-700 overflow-hidden flex items-center justify-center font-serif font-bold text-amber-300 text-base shadow-md group-hover:scale-105 transition-transform shrink-0">
+            <div className="w-12 h-12 rounded-full border border-amber-400 bg-crimson-700 overflow-hidden flex items-center justify-center font-serif font-bold text-amber-300 text-base shadow-md group-hover:scale-105 transition-transform shrink-0">
               <img
-                src={msFlag}
+                src={msflag2}
                 alt="Mississippi state flag"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-fit"
               />
             </div>
 
             <div className="flex flex-col">
               <span className="font-serif text-lg md:text-xl font-bold tracking-tight text-white leading-tight">
-                Nellie "Cookie" Satcher
+                Nellie "Cookie" Satcher For
               </span>
-              <span className="text-[10px] md:text-xs text-amber-400 font-semibold tracking-wider uppercase">
-                District 34 Senate
-              </span>
+             <span className="flex items-center gap-1.5 text-[10px] md:text-xs text-amber-400 font-semibold tracking-wider uppercase">
+  Mississippi State Senate
+  <svg
+    viewBox="0 0 60 100"
+    aria-hidden="true"
+    className="w-[7px] h-[11px] md:w-2 md:h-3 fill-amber-400 shrink-0"
+  >
+    <path d="M23.4 1 L58.8 1 L54.3 81 L55.4 93.6 L35.3 97.4 L32.8 81 L1.2 81 L2.5 69 L10.1 55 L10.1 41 L10.9 29 L12.6 21 L19.3 9 Z" />
+  </svg>
+  District 34
+</span>
             </div>
           </a>
 
@@ -73,14 +81,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDonate, onOpenAdmin }) => 
 
           {/* Zone 3: 1 primary action */}
           <div className="hidden md:flex items-center space-x-3 shrink-0">
-            <button
-              onClick={onOpenAdmin}
-              title="Campaign Headquarters Dashboard"
-              className="px-3 py-2 rounded-lg border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 text-xs font-semibold flex items-center gap-1.5 transition-colors whitespace-nowrap"
-            >
-              <Shield className="w-3.5 h-3.5 text-amber-400" />
-              <span>HQ Portal</span>
-            </button>
+            
             <button
               onClick={onOpenDonate}
               className="px-5 py-2.5 rounded-lg bg-gradient-to-r from-crimson-600 to-crimson-700 hover:from-crimson-700 hover:to-crimson-800 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center gap-2 whitespace-nowrap"
