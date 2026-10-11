@@ -73,7 +73,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDonate, onOpenAdmin }) => 
                 Donate To Campaign
               </button>
               <a
-                href="#volunteer"
+                href="https://www.sos.ms.gov/elections-voting/voter-registration-information"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block w-full py-2.5 px-4 bg-navy-900 hover:bg-navy-800 text-amber-300 border border-amber-400/40 rounded-lg text-xs font-semibold tracking-wider uppercase transition-colors text-center"
               >
                 Register to Vote
@@ -92,10 +94,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDonate, onOpenAdmin }) => 
         {/* Campaign Disclosure & Disclaimer */}
         <div className="mt-8 text-center space-y-3 text-xs text-slate-400 max-w-2xl mx-auto">
           <div className="inline-block p-3 border border-slate-800 rounded-lg text-slate-300 uppercase tracking-widest font-bold text-[11px]">
-            Paid for by pending campaign approval. 
+            Political authorization disclaimer pending campaign approval.
           </div>
           <p className="text-[11px] text-slate-500">
-            © 2026 Nellie "Cookie" Satcher pending campaign approval. All rights reserved.
+            © 2026 Nellie "Cookie" Satcher. All rights reserved.
           </p>
         </div>
       </div>

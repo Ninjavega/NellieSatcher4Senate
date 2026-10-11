@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Heart, Shield } from 'lucide-react';
+import msFlag from '../assets/images/msflag.jpg';
 
 interface NavbarProps {
   onOpenDonate: () => void;
@@ -14,21 +15,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenDonate, onOpenAdmin }) => 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 gap-8">
           {/* Zone 1: Single text element wordmark */}
-          
-          
-          
           <a
             href="#"
             className="flex items-center gap-3 group shrink-0 whitespace-nowrap"
           >
-            <div className="w-10 h-10 rounded-full border border-amber-400 bg-crimson-700 flex items-center justify-center font-serif font-bold text-amber-300 text-base shadow-md group-hover:scale-105 transition-transform shrink-0">
-              <img src="/images/msflag.jpg" />
-
-
+            <div className="w-10 h-10 rounded-full border border-amber-400 bg-crimson-700 overflow-hidden flex items-center justify-center font-serif font-bold text-amber-300 text-base shadow-md group-hover:scale-105 transition-transform shrink-0">
+              <img
+                src={msFlag}
+                alt="Mississippi state flag"
+                className="w-full h-full object-cover"
+              />
             </div>
-
-
-
 
             <div className="flex flex-col">
               <span className="font-serif text-lg md:text-xl font-bold tracking-tight text-white leading-tight">
