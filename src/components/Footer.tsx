@@ -22,13 +22,13 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDonate, onOpenAdmin }) => 
                   Nellie "Cookie" Satcher
                 </h3>
                 <p className="text-amber-400 text-xs font-semibold tracking-wider uppercase">
-                  Candidate for State Senate · District 34
+                  {/* Candidate for Mississippi State Senate District 34 */}
                 </p>
               </div>
             </div>
 
             <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
-              Dedicated to non-partisan leadership that prioritizes our families, public schools, local small business growth, and neighborhood safety across District 34.
+              Candidate for Mississippi State Senate District 34 • Special Election
             </p>
 
             <div className="pt-2 flex items-center gap-4 text-xs text-slate-400">
@@ -57,12 +57,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDonate, onOpenAdmin }) => 
               <a href="#events" className="hover:text-amber-300 transition-colors">
                 Upcoming Events
               </a>
-              <a href="#volunteer" className="hover:text-amber-300 transition-colors">
-                Host a Yard Sign
-              </a>
-              <a href="#endorsements" className="hover:text-amber-300 transition-colors">
-                Community Endorsements
-              </a>
             </div>
           </div>
 
@@ -82,14 +76,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDonate, onOpenAdmin }) => 
                 href="#volunteer"
                 className="block w-full py-2.5 px-4 bg-navy-900 hover:bg-navy-800 text-amber-300 border border-amber-400/40 rounded-lg text-xs font-semibold tracking-wider uppercase transition-colors text-center"
               >
-                Sign Up To Volunteer
+                Register to Vote
               </a>
               <button
                 onClick={onOpenAdmin}
                 className="w-full py-2 px-3 text-slate-400 hover:text-slate-200 text-[11px] font-medium flex items-center justify-center gap-1.5 transition-colors"
               >
                 <Shield className="w-3.5 h-3.5 text-amber-400" />
-                <span>Campaign Headquarters Access</span>
+                <span>Admin Login</span>
               </button>
             </div>
           </div>
@@ -98,10 +92,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDonate, onOpenAdmin }) => 
         {/* Campaign Disclosure & Disclaimer */}
         <div className="mt-8 text-center space-y-3 text-xs text-slate-400 max-w-2xl mx-auto">
           <div className="inline-block p-3 border border-slate-800 rounded-lg text-slate-300 uppercase tracking-widest font-bold text-[11px]">
-            Paid for by Nellie Satcher for Senate Committee. Non-Partisan Campaign.
+            Paid for by pending campaign approval. 
           </div>
           <p className="text-[11px] text-slate-500">
-            © 2026 Elect Nellie "Cookie" Satcher for District 34 Senate. All rights reserved.
+            © 2026 Nellie "Cookie" Satcher pending campaign approval. All rights reserved.
           </p>
         </div>
       </div>

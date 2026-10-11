@@ -43,7 +43,7 @@ export const AboutSection: React.FC = () => {
             </h2>
 
             <p className="text-slate-600 text-base md:text-lg leading-relaxed">
-              Nellie "Cookie" Satcher has devoted her life to uplifting families, advocating for educational excellence, and ensuring local communities receive the resources they deserve. Running as a dedicated <strong>non-partisan leader</strong>, Nellie believes that state legislative decisions must put real people over political posturing.
+              Nellie “Cookie” Satcher is a graduate of William Carey University with a Master’s in Business Administration and a BS in Psychology. She previously served as Human Resources Director for the City of Laurel and as Branch Director at the Mississippi Department of Employment Security (MDES). She has also led the International Association of Workforce Professionals (IAWP) as president for the state of Mississippi and as area president representing Mississippi, Alabama, and Tennessee.
             </p>
 
             <p className="text-slate-600 text-base leading-relaxed">
