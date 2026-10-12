@@ -25,7 +25,7 @@ export const AboutSection: React.FC = () => {
                   <span>The Cookie Satcher Promise</span>
                 </div>
                 <p className="font-serif italic text-sm text-slate-200 leading-relaxed">
-                  "When you send me to the State Senate, you will have a direct line to your government. No partisan games, no excuses—just steady, transparent hard work for our neighborhoods."
+                  "Quote Needed"
                 </p>
                 <div className="mt-2 text-xs text-amber-400 font-bold">— Nellie "Cookie" Satcher</div>
               </div>
@@ -55,7 +55,7 @@ export const AboutSection: React.FC = () => {
                 <div>
                   <h3 className="font-bold text-sm text-navy-950">Economic Growth</h3>
                   <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                    null
+                    Quote Needed
                   </p>
                 </div>
               </div>
@@ -91,7 +91,7 @@ export const AboutSection: React.FC = () => {
                 <div>
                   <h3 className="font-bold text-sm text-navy-950">Uplift & Empower Stronger Families</h3>
                   <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                    A homegrown leader whose family lives, works, and worships right here in the heart of our community.
+                    A leader whose family lives, works right here in the heart of our community.
                   </p>
                 </div>
               </div>

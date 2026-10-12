@@ -118,28 +118,28 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
               ELECTION DAY
             </h3>
             <div className="text-xl font-bold text-amber-400 font-serif mb-5">
-              Tuesday, December 22, 2026
+              TBA
             </div>
 
             <div className="space-y-3 p-4 rounded-xl bg-navy-950/80 border border-slate-800 text-sm mb-6">
               <div className="flex items-center justify-between">
-                <span className="text-slate-400">Office:</span>
-                <span className="font-bold text-white">District 34 State Senate</span>
+                <span className="text-slate-400">District:</span>
+                <span className="font-bold text-white">34</span>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-slate-400">Ballot Category:</span>
-                <span className="font-bold text-amber-400">Non-Partisan</span>
+                <span className="font-bold text-amber-400">Special Elections </span>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-slate-400">Election Hours:</span>
                 <span className="font-bold text-white flex items-center gap-1.5">
                   <Clock className="w-3.5 h-3.5 text-amber-400" />
-                  7:00 AM – 7:00 PM
+                  TBA
                 </span>
               </div>
               <div className="flex items-center justify-between pt-2 border-t border-slate-800">
                 <span className="text-slate-400">In-Person Early Voting:</span>
-                <span className="font-bold text-white">Nov 30 – Dec 19, 2026</span>
+                <span className="font-bold text-white">TBA</span>
               </div>
             </div>
 
@@ -155,7 +155,7 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>If registered, your name will appear on the precinct poll book</span>
+                  <span>Make sure you are registered to vote ahead of election day</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -318,10 +318,8 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
                         {[
                           'Host a Yard Sign',
                           'Volunteer Time',
-                          'Phone Banking',
-                          'Door Knocking',
-                          'Event Greeter',
-                          'Precinct Captain',
+                          
+                          
                         ].map((option) => (
                           <label
                             key={option}
