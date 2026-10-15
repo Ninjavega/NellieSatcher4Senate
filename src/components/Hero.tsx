@@ -187,7 +187,7 @@ export const Hero: React.FC<HeroProps> = ({ stats, onOpenDonate }) => {
           {/* Right Column: Candidate Portrait Frame */}
           <div className="lg:col-span-5 flex justify-center">
             <div className="relative w-full max-w-md">
-              <div className="absolute -inset-2 rounded-2xl bg-gradient-to-tr from-amber-400 via-crimson-600 to-navy-700 opacity-50 blur-lg" />
+              <div className="absolute -inset-1 sm:-inset-2 rounded-2xl bg-gradient-to-tr from-amber-400 via-crimson-600 to-navy-700 opacity-50 blur-md sm:blur-lg" />
               <div className="relative rounded-2xl overflow-hidden border border-amber-400/50 shadow-2xl bg-navy-900 aspect-[3/4]">
                 <img
                   src={CAMPAIGN_IMAGES.portrait}

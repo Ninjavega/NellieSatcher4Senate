@@ -86,8 +86,8 @@ export const VolunteerSection: React.FC<VolunteerSectionProps> = ({
   };
 
   return (
-    <section id="volunteer" className="py-20 md:py-28 bg-gradient-to-b from-navy-900 to-navy-950 text-white relative">
-      <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
+    <section id="volunteer" className="py-20 md:py-28 bg-gradient-to-b from-navy-900 to-navy-950 text-white relative overflow-hidden">
+      <div className="text-center max-w-3xl mx-auto mb-14 space-y-3 px-4">
           <div className="inline-block text-amber-300 font-extrabold text-xs tracking-widest uppercase bg-amber-400/10 border border-amber-400/30 px-3 py-1 rounded-full">
             Voter Resource Center
           </div>

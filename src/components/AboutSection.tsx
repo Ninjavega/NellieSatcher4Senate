@@ -6,16 +6,16 @@ export const AboutSection: React.FC = () => {
   return (
     <section id="about" className="py-20 md:py-28 bg-white border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Photo & Community Quote Frame */}
           <div className="lg:col-span-5">
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-slate-100">
                 <img
-                  src={CAMPAIGN_IMAGES.districtmap}
+                  src={CAMPAIGN_IMAGES.districtmap2}
                   alt="Nellie Cookie Satcher listening to District 34 community members"
                   referrerPolicy="no-referrer"
-                  className="w-full h-auto object-cover aspect-[4/3]"
+                  className="w-full h-auto object-fill"
                 />
               </div>
 
@@ -33,7 +33,7 @@ export const AboutSection: React.FC = () => {
           </div>
 
           {/* Narrative Content */}
-          <div className="lg:col-span-7 space-y-6">
+          <div className="lg:col-span-7 space-y-4 self-start">
             <div className="inline-flex items-center gap-2 text-xs font-bold text-crimson-700 uppercase tracking-widest bg-crimson-50 px-3 py-1 rounded-md">
               Experienced Leadership · Community First
             </div>
@@ -55,7 +55,7 @@ export const AboutSection: React.FC = () => {
                 <div>
                   <h3 className="font-bold text-sm text-navy-950">Economic Growth</h3>
                   <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                    Quote Needed
+                    Supporting local businesses, job security and investing in next-generation innovation, we can build a resilient economy that rewards hard work and drives sustainable growth.
                   </p>
                 </div>
               </div>

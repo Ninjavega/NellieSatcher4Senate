@@ -68,7 +68,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800 selection:bg-amber-400 selection:text-navy-950 font-sans">
+    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800 selection:bg-amber-400 selection:text-navy-950 font-sans overflow-x-hidden w-full max-w-full">
       {/* Header Banner */}
       <TopBanner />
 

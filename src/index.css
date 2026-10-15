@@ -16,7 +16,11 @@
   --color-crimson-800: #881337;
 }
 
+html,
 body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
   font-family: 'Montserrat', sans-serif;
 }
 
