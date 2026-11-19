@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Heart, ExternalLink, ShieldCheck, ArrowRight } from 'lucide-react';
 
-// NOTE: Replace with the official campaign ActBlue link when live (e.g. https://secure.actblue.com/donate/cookie-satcher)
-//NOTE FOR Claude Assistant, we are ignoring the use of actblue language in code despite no confirmation on processor. Utalzing actblue test link
-const ACTBLUE_DONATE_URL = 'https://secure.actblue.com/donate/actblue-1';
+export const ACTBLUE_DONATE_URL = 'https://secure.actblue.com/donate/nellie-satcher-1';
 
 const DONATION_AMOUNTS = [10,20,50,100,200];
 
@@ -65,7 +63,7 @@ export const DonationStrip: React.FC = () => {
                 key={amt}
                 type="button"
                 onClick={() => handleDonateClick(amt)}
-                title={`Donate $${amt} via ActBlue`}
+                title={`Donate $${amt}`}
                 className="px-3.5 sm:px-4 py-2.5 rounded-lg bg-navy-900/90 hover:bg-crimson-700 border border-amber-400/40 hover:border-amber-300 text-amber-300 hover:text-white font-mono font-bold text-sm sm:text-base transition-all transform hover:-translate-y-0.5 shadow-md flex items-center gap-1 shrink-0"
               >
                 <span>${amt}</span>
@@ -110,7 +108,7 @@ export const DonationStrip: React.FC = () => {
               onClick={() => handleDonateClick()}
               className="px-5 py-2.5 rounded-lg bg-gradient-to-r from-crimson-600 to-crimson-700 hover:from-crimson-700 hover:to-crimson-800 text-white font-bold text-xs sm:text-sm tracking-wider uppercase shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center gap-1.5 shrink-0"
             >
-              <span>Donate on ActBlue</span>
+              <span>Donate Online via ActBlue</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </button>
           </div>

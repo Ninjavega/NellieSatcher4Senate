@@ -100,11 +100,10 @@ export default function App() {
         onOpenAdmin={() => setIsAdminOpen(true)}
       />
 
-      {/* Interactive Grassroots Donation Modal */}
+      {/* Grassroots ActBlue Donation Outbound Modal */}
       <DonateModal
         isOpen={isDonateOpen}
         onClose={() => setIsDonateOpen(false)}
-        onDonationComplete={handleDonationComplete}
       />
 
       {/* Campaign Headquarters Management Modal */}

@@ -72,14 +72,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDonate, onOpenAdmin }) => 
               >
                 Donate To Campaign
               </button>
-              <a
-                href="https://www.sos.ms.gov/elections-voting/voter-registration-information"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full py-2.5 px-4 bg-navy-900 hover:bg-navy-800 text-amber-300 border border-amber-400/40 rounded-lg text-xs font-semibold tracking-wider uppercase transition-colors text-center"
-              >
-                Register to Vote
-              </a>
               <button
                 onClick={onOpenAdmin}
                 className="w-full py-2 px-3 text-slate-400 hover:text-slate-200 text-[11px] font-medium flex items-center justify-center gap-1.5 transition-colors"
